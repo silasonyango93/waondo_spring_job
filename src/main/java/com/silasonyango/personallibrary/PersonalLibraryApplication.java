@@ -1,5 +1,6 @@
 package com.silasonyango.personallibrary;
 
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -10,6 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @SpringBootApplication
 @EnableJpaAuditing
+@EnableBatchProcessing
 public class PersonalLibraryApplication {
 
 	public static void main(String[] args) {
